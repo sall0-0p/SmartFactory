@@ -19,11 +19,11 @@
 }
 
 .nav__item-icon {
-    width: 15%;
+    width: 20%;
     aspect-ratio: 1/1;
     margin-right: 15px;
 
-    background: center / contain url("../../../assets/images/cc_logo.png")
+    background: center / contain no-repeat;
 }
 
 .nav__item-title {
