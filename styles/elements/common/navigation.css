@@ -1,0 +1,44 @@
+.nav {
+    width: 100%;
+}
+
+.nav__primary {
+    flex-grow: 1;
+}
+
+.nav__item {
+    width: 100%;
+    aspect-ratio: 4/1;
+
+    display: flex;
+    align-items: center;
+
+    padding: 15px;
+
+    transition: 0.15s;
+}
+
+.nav__item-icon {
+    width: 15%;
+    aspect-ratio: 1/1;
+    margin-right: 15px;
+
+    background: center / contain url("../../../assets/images/cc_logo.png")
+}
+
+.nav__item-title {
+    color: var(--primary-text);
+    font-family: var(--main-font);
+    font-size: 20px;
+}
+
+/* Effects */
+
+.nav__item:hover:not(.nav__selected) {
+    background-color: var(--primary-dark);
+    border-left: solid 5px var(--copper);
+}
+
+.nav__selected {
+    background-color: #2e2e33;
+}

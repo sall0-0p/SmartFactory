@@ -1,0 +1,45 @@
+:root {
+
+    /* Colors */
+    --primary-dark: #1e1e20;
+    --secondary-dark: #35363c;
+
+    --copper: #CC9543;
+    --blueprint: #7594ec;
+
+    --primary-text: #F0F0F0;
+
+    /* Constants for spacing */
+    --padding-xs: 2px;
+    --padding-s: 5px;
+    --padding-m: 10px;
+    --padding-ms: 15px;
+    --padding-l: 20px;
+    --padding-ls: 25px;
+    --padding-xl: 30px;
+    --padding-xls: 35px;
+    --padding-xxl: 40px;
+
+    --padding--xs: -2px;
+    --padding--s: -5px;
+    --padding--m: -10px;
+    --padding--ms: -15px;
+    --padding--l: -20px;
+    --padding--ls: -25px;
+    --padding--xl: -30px;
+    --padding--xls: -35px;
+    --padding--xxl: -40px;
+    
+    /* Radius */
+    --radius: 4px;
+    --radius-xs: 2px;
+    --radius-s: 5px;
+    --radius-m: 10px;
+    --radius-ms: 15px;
+    --radius-l: 20px;
+
+    /* Other stuff */
+    --header-height: 80px;
+
+    --main-font: 'Roboto Mono', sans-serif;
+}
