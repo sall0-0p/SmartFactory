@@ -35,11 +35,6 @@
 
 /* Effects */
 
-.nav__item:hover {
-    background-color: var(--primary-dark);
-    border-left: solid 7px var(--copper);
-}
-
 .nav__selected {
     background-color: #2e2e33;
 }

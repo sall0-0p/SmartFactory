@@ -75,11 +75,6 @@
 
 /* Effects */
 
-.queue__item:hover {
-    border-left: 7px solid var(--copper);
-    background-color: var(--highlight-dark);
-}
-
 .queue__item-button:hover {
     background-color: var(--highlight-light);
 }

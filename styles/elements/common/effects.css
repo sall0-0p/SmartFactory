@@ -1,0 +1,9 @@
+.hover {
+    border-left: 0px solid;
+    transition: 0.2s;
+}
+
+.hover:hover {
+    border-left: 7px solid var(--copper);
+    background-color: var(--highlight-dark);
+}
