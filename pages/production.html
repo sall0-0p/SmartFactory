@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>CCF: Production</title>
+        <link rel="icon" type="image/x-icon" href="../assets/images/clipboard_and_quill.png">
+
+        <link rel="stylesheet" href="../styles/elements/common/main.css">
+        <link rel="stylesheet" href="../styles/elements/common/header.css">
+        <link rel="stylesheet" href="../styles/elements/common/sidebar.css">
+        <link rel="stylesheet" href="../styles/elements/common/shadow.css">
+        <link rel="stylesheet" href="../styles/elements/common/navigation.css">
+        <link rel="stylesheet" href="../styles/elements/common/tooltip.css">
+
+        <link rel="stylesheet" href="../styles/elements/production/content.css">
+        <link rel="stylesheet" href="../styles/elements/production/status.css">
+        <link rel="stylesheet" href="../styles/elements/production/queue.css">
+
+        <link rel="stylesheet" href="../styles/reset.css">
+        <link rel="stylesheet" href="../styles/variables.css">
+
+        <!-- Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+        <link href="https://fonts.cdnfonts.com/css/minecraft-3" rel="stylesheet">
+    </head>
+
+    <body class="body">
+        <div class="sidebar shadow-l">
+            <div class="sidebar__header">
+                <a><div class="sidebar__header-logo"></div></a>
+            </div>
+            <nav class="nav nav__primary">
+                <a href="../pages/dashboard.html">
+                    <div class="nav__item">
+                        <div class="nav__item-icon" style='background: center / contain no-repeat url("../assets/images/clipboard.png")'></div>
+                        <h4 class="nav__item-title">Dashboard</h4>
+                    </div>
+                </a>
+                <a href="../pages/production.html">
+                    <div class="nav__item nav__selected">
+                        <div class="nav__item-icon" style='background: center / contain no-repeat url("../assets/images/schedule.png")'></div>
+                        <h4 class="nav__item-title">Production</h4>
+                    </div>
+                </a>
+                <a>
+                    <div class="nav__item">
+                        <div class="nav__item-icon" style='background: center / contain no-repeat url("../assets/images/bundle.png")'> </div>
+                        <h4 class="nav__item-title">Storage</h4>
+                    </div>
+                </a>
+                <a>
+                    <div class="nav__item">
+                        <div class="nav__item-icon" style='background: center / contain no-repeat url("../assets/images/minecart_chest.png")'></div>
+                        <h4 class="nav__item-title">Logistics</h4>
+                    </div>
+                </a>
+
+            </nav>
+            <div class="sidebar__footer nav nav__props shadow-s">
+                <a>
+                    <div class="nav__item">
+                        <div class="nav__item-icon" style='background: center / contain no-repeat url("../assets/images/crafting_blueprint.png")'></div>
+                        <h4 class="nav__item-title">Recipes</h4>
+                    </div>
+                </a>
+                <a>
+                    <div class="nav__item">
+                        <div class="nav__item-icon" style='background: center / contain no-repeat url("../assets/images/goggles.png")'></div>
+                        <h4 class="nav__item-title">Settings</h4>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <main class="main">
+            <header class="header shadow-m">
+                <div class="header__left">
+                    <!-- <div class="header__logo"></div> -->
+                    <div class="header__title">Production</div>
+                </div>
+            </header>
+            <div class="content">
+                <!-- First content block. Production status, amount produced per minute, to produce items, order completitions etc. -->
+                <div class="content__block">
+                    <h3 class="content__text">Production Status:</h1>
+                </div>
+                <!-- Second content block. Queue with different tasks in queue. Table in fact. -->
+                <div class="content__block">
+                    <header class="queue__header">
+                        <h3 class="content__title queue__content-title">Production Queue</h3>
+                        <div class="content__input">
+                            <i class="content__button-icon content__button-icon-spaced" style='background: center / contain no-repeat url("../assets/images/spyglass.png")'></i>
+                            <input class="content__input-raw" placeholder="Search"></input>
+                        </div>
+                        <div class="content__button content__button-spacing">
+                            <i class="content__button-icon content__button-icon-spaced" style='background: center / contain no-repeat url("../assets/images/clipboard_and_quill.png")'></i>
+                            <p class="content__button-title">NEW ORDER</p>
+                        </div>
+                        <div class="content__button tooltip">
+                            <i class="content__button-icon" style='background: center / contain no-repeat url("../assets/images/bucket_lava.png")'></i>
+                            <span class="tooltip__text tooltip__left">Delete All</span>
+                        </div>
+                    </header>
+                    <div class="queue__content">
+                        <div class="queue__item">
+                            <div class="queue__item-sub">
+                                <i class="queue__item-icon content__button-icon-spaced" style='background: center / contain no-repeat url("../assets/images/brass_hand.png")'></i>
+                                <h3 class="queue__item-title">Brass Hand</h3>
+                            </div>
+                            <p class="queue__item-label tooltip">200/2000
+                                <span class="tooltip__text tooltip__bottom">Amount Produced</span>
+                            </p>
+                            <p class="queue__item-label tooltip">10m
+                                <span class="tooltip__text tooltip__bottom">ETA</span>
+                            </p>
+                            <div class="queue__item-status status__standby">Producing</div>
+                            <div class="queue__item-sub">
+                                <div class="content__button queue__item-button content__button-icon-spaced tooltip">
+                                    <i class="queue__item-icon" style='background: center / contain no-repeat url("../assets/images/clipboard.png")'></i>
+                                    <span class="tooltip__text tooltip__bottom">Edit</span>
+                                </div>
+                                <div class="content__button queue__item-button content__button-icon-spaced tooltip">
+                                    <i class="queue__item-icon" style='background: center / contain no-repeat url("../assets/images/dye_powder_red.png")'></i>
+                                    <span class="tooltip__text tooltip__bottom">Suspend</span>
+                                </div>
+                                <div class="content__button queue__item-button tooltip">
+                                    <i class="queue__item-icon" style='background: center / contain no-repeat url("../assets/images/bucket_lava.png")'></i>
+                                    <span class="tooltip__text tooltip__bottom">Delete</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="queue__item">
+                            <div class="queue__item-sub">
+                                <i class="queue__item-icon content__button-icon-spaced" style='background: center / contain no-repeat url("../assets/images/brass_hand.png")'></i>
+                                <h3 class="queue__item-title">Brass Hand</h3>
+                            </div>
+                            <p class="queue__item-label tooltip">200/2000
+                                <span class="tooltip__text tooltip__bottom">Amount Produced</span>
+                            </p>
+                            <p class="queue__item-label tooltip">10m
+                                <span class="tooltip__text tooltip__bottom">ETA</span>
+                            </p>
+                            <div class="queue__item-status status__error">Suspended</div>
+                            <div class="queue__item-sub">
+                                <div class="content__button queue__item-button content__button-icon-spaced tooltip">
+                                    <i class="queue__item-icon" style='background: center / contain no-repeat url("../assets/images/clipboard.png")'></i>
+                                    <span class="tooltip__text tooltip__bottom">Edit</span>
+                                </div>
+                                <div class="content__button queue__item-button content__button-icon-spaced tooltip">
+                                    <i class="queue__item-icon" style='background: center / contain no-repeat url("../assets/images/dye_powder_lime.png")'></i>
+                                    <span class="tooltip__text tooltip__bottom">Renew</span>
+                                </div>
+                                <div class="content__button queue__item-button tooltip">
+                                    <i class="queue__item-icon" style='background: center / contain no-repeat url("../assets/images/bucket_lava.png")'></i>
+                                    <span class="tooltip__text tooltip__bottom">Delete</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer class="footer"></footer>
+        </main>
+    </body>
+</html>

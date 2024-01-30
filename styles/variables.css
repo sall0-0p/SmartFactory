@@ -3,11 +3,19 @@
     /* Colors */
     --primary-dark: #1e1e20;
     --secondary-dark: #35363c;
+    --secondary-light: #4f515a;
 
     --copper: #CC9543;
     --blueprint: #7594ec;
+    --success: #3db03d;
+    --warning: var(--copper);
+    --error: #FF5555;
 
     --primary-text: #F0F0F0;
+    --secondary-text: #ababab;
+
+    --highlight-dark: #2e2e32;
+    --highlight-light: #404249;
 
     /* Constants for spacing */
     --padding-xs: 2px;

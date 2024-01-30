@@ -15,7 +15,7 @@
 
     padding: 15px;
 
-    transition: 0.15s;
+    transition: 0.25s cubic-bezier(0, 0, 0.5, 1);
 }
 
 .nav__item-icon {
@@ -29,14 +29,15 @@
 .nav__item-title {
     color: var(--primary-text);
     font-family: var(--main-font);
+    font-weight: 400;
     font-size: 20px;
 }
 
 /* Effects */
 
-.nav__item:hover:not(.nav__selected) {
+.nav__item:hover {
     background-color: var(--primary-dark);
-    border-left: solid 5px var(--copper);
+    border-left: solid 7px var(--copper);
 }
 
 .nav__selected {

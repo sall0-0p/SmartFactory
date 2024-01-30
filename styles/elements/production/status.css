@@ -1,0 +1,27 @@
+.status__success {
+    /* color: var(--primary-text); */
+    font-family: 'Minecraft', sans-serif;
+
+    background-color: #3db03d;
+}
+
+.status__standby {
+    /* color: var(--primary-text); */
+    font-family: "Minecraft", sans-serif;
+
+    background-color: #AAAAAA;
+}
+
+.status__warning {
+    /* color: var(--primary-text); */
+    font-family: "Minecraft", sans-serif;
+
+    background-color: var(--copper)
+}
+
+.status__error {
+    /* color: var(--primary-text); */
+    font-family: "Minecraft", sans-serif;
+
+    background-color: var(--error);
+}
